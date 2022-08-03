@@ -25,9 +25,10 @@ const Header = () => {
 
   return (
     <header className="fixed right-0 left-0 top-0 flex h-[80px] w-full select-none items-center gap-x-5 bg-white px-5 dark:bg-primary md:px-20">
+      {/* Left div LOGO && Links */}
       <div className="flex items-center gap-x-5">
         <span className="smooth--hover cursor-pointer text-2xl font-bold tracking-widest text-brand hover:text-white">
-          PS
+          DP
         </span>
         <ul className="hidden gap-x-5 text-base font-normal tracking-widest text-white md:flex">
           {link?.map((data, index) => (
@@ -47,6 +48,7 @@ const Header = () => {
           ))}
         </ul>
       </div>
+      {/* Dark and Light toggle && Icons */}
       {theme === "light" ? (
         <svg
           className="absolute right-16 h-6 w-6 text-primary"
@@ -80,6 +82,7 @@ const Header = () => {
           />
         </svg>
       )}
+      {/* Menu toggle && icons */}
       <div className="center--content smooth--hover absolute right-4  h-10 w-10 cursor-pointer rounded-full hover:bg-brand/30 dark:text-white md:hidden">
         <svg
           className="h-6 w-6 "
