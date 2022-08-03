@@ -5,7 +5,7 @@ import { techData } from "./techData";
 const Profile = () => {
   return (
     <section
-      className="center--content min-h-screen px-5 py-32 text-white md:px-20 select-none"
+      className="center--content min-h-screen select-none px-5 py-32 text-white md:px-20"
       id="profile"
     >
       <div className="container flex flex-col justify-between gap-x-5 md:flex-row">
@@ -24,7 +24,7 @@ const Profile = () => {
           <div className="mt-10 flex flex-wrap gap-3">
             {techData?.map((data, index) => (
               <div
-                className="smooth--hover flex h-[24px] items-center justify-center gap-x-1 rounded-md bg-secondary px-2"
+                className="flex h-[24px] items-center justify-center gap-x-1 rounded-md bg-secondary px-2"
                 key={index}
               >
                 <img src={data.icon} alt={data.title} />
