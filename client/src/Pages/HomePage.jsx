@@ -1,30 +1,20 @@
 import React from "react";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
 // components
 import Header from "../components/header/Header";
 import Profile from "../components/profile/Profile";
+import Projects from "../components/projcets/Projects";
+import Services from "../components/services/Services";
 const HomePage = () => {
   return (
-    <div className="h-full w-full min-w-[280px] bg-primary">
+    <div className="h-full w-full min-w-[280px] bg-white dark:bg-primary ">
       <Header />
       <Profile />
-      <div
-        className="center--content h-screen bg-slate-300 text-white"
-        id="services"
-      >
-        Service
-      </div>
-      <div
-        className="center--content h-screen bg-blue-300 text-white"
-        id="projects"
-      >
-        Projects
-      </div>
-      <div
-        className="center--content h-screen bg-red-300 text-white"
-        id="contact"
-      >
-        Contact
-      </div>
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 };

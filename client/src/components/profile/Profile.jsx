@@ -5,16 +5,18 @@ import { techData } from "./techData";
 const Profile = () => {
   return (
     <section
-      className="center--content min-h-screen bg-primary px-5 py-20 text-white md:px-20"
+      className="center--content min-h-screen px-5 py-20 text-white md:px-20 select-none"
       id="profile"
     >
       <div className="container flex flex-col justify-between gap-x-5 md:flex-row">
         <div className="w-full md:w-1/2">
-          <h1 className="text-5xl">
+          <h1 className="text-5xl text-primary dark:text-white">
             Hi, I'm <span className="font-bold text-brand">Patrick</span>
           </h1>
-          <h2 className="text-3xl font-medium leading-loose my-1">Web Developer</h2>
-          <p className="font-extralight">
+          <h2 className="my-1 text-3xl font-medium leading-loose text-primary dark:text-white">
+            Web Developer
+          </h2>
+          <p className="font-extralight text-primary dark:text-white">
             I love automating manual processes through my web development
             skills. I am a full-stack web developer based in Pampanga,
             Philippines.
@@ -22,7 +24,7 @@ const Profile = () => {
           <div className="mt-10 flex flex-wrap gap-3">
             {techData?.map((data, index) => (
               <div
-                className="smooth--hover flex h-[24px] cursor-pointer  items-center justify-center gap-x-1 rounded-md bg-secondary px-2 md:hover:bg-brand/50"
+                className="smooth--hover flex h-[24px] items-center justify-center gap-x-1 rounded-md bg-secondary px-2"
                 key={index}
               >
                 <img src={data.icon} alt={data.title} />
@@ -32,10 +34,10 @@ const Profile = () => {
           </div>
           {/* button */}
           <div className="mt-14 flex gap-x-5">
-            <button className="smooth--hover w-28 rounded-sm border border-brand bg-brand py-1 hover:bg-transparent ">
+            <button className="smooth--hover w-24 rounded-sm border border-brand bg-brand py-1 text-primary hover:bg-transparent dark:text-white ">
               Hire me
             </button>
-            <button className="center--content smooth--hover flex w-28 rounded-sm border border-brand py-1 text-sm hover:bg-brand">
+            <button className="center--content smooth--hover flex w-24 rounded-sm border border-brand py-1 text-sm text-primary hover:bg-brand dark:text-white">
               Resume
               <span>
                 <svg
