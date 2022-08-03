@@ -5,7 +5,7 @@ import { techData } from "./techData";
 const Profile = () => {
   return (
     <section
-      className="center--content min-h-screen px-5 py-20 text-white md:px-20 select-none"
+      className="center--content min-h-screen px-5 py-32 text-white md:px-20 select-none"
       id="profile"
     >
       <div className="container flex flex-col justify-between gap-x-5 md:flex-row">

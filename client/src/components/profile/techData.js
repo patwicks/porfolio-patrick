@@ -1,4 +1,3 @@
-
 import SVG_REACTJS from "./assets/react.svg";
 import SVG_NODE from "./assets/nodejs.svg";
 import SVG_XD from "./assets/adobexd.svg";
@@ -10,6 +9,8 @@ import SVG_MONGODB from "./assets/mongodb.svg";
 import SVG_PS from "./assets/photoshop.svg";
 import SVG_TAILWIND from "./assets/tailwindcss.svg";
 import SVG_VITE from "./assets/vite.svg";
+import SVG_NETLIFY from "./assets/netlify.svg";
+import SVG_HEROKU from "./assets/heroku.svg";
 
 export const techData = [
   {
@@ -41,6 +42,10 @@ export const techData = [
     icon: SVG_VITE,
   },
   {
+    title: "Zustand",
+    icon: SVG_REACTJS,
+  },
+  {
     title: "Git",
     icon: SVG_GIT,
   },
@@ -55,5 +60,13 @@ export const techData = [
   {
     title: "Figma",
     icon: SVG_FIGMA,
+  },
+  {
+    title: "Netlify",
+    icon: SVG_NETLIFY,
+  },
+  {
+    title: "Heroku",
+    icon: SVG_HEROKU,
   },
 ];
