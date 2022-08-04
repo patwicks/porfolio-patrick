@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineGithub } from "react-icons/ai";
 import SVG_DEVELOPER from "./assets/developer.svg";
 import { techData } from "./techData";
 
@@ -34,10 +35,17 @@ const Profile = () => {
           </div>
           {/* button */}
           <div className="mt-14 flex gap-x-5">
-            <button className="smooth--hover w-24 rounded-sm border border-brand bg-brand py-1 text-primary hover:bg-transparent dark:text-white ">
-              Hire me
+            <button className="smooth--hover center--content w-28  rounded-sm border border-brand bg-brand py-1 text-primary hover:bg-transparent dark:text-white">
+              <a
+                className="flex items-center gap-x-2"
+                href="https://github.com/patwicks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiOutlineGithub className="text-lg" /> Github
+              </a>
             </button>
-            <button className="center--content smooth--hover flex w-24 rounded-sm border border-brand py-1 text-sm text-primary hover:bg-brand dark:text-white">
+            <button className="center--content smooth--hover flex w-28 rounded-sm border border-brand py-1 text-sm text-primary hover:bg-brand dark:text-white">
               Resume
               <span>
                 <svg

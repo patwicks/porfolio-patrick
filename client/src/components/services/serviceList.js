@@ -19,7 +19,7 @@ export const serviceList = [
   {
     title: "API",
     description:
-      "Producing an Application Programming Interface (API) for the front-end using Node/ExpressJS.",
+      "Producing a high-quality Application Programming Interface (API) for front-end integration using Node/ExpressJS.",
     icon: API,
   },
   {

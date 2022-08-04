@@ -1,8 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-scroll";
 import { ThemeContext } from "../../context/ThemeContext";
+import SideHeader from "./SideHeader";
+
 const Header = () => {
-  const link = [
+  const [show, setShow] = useState(false);
+  const toggleMenu = () => {
+    setShow(!show);
+  };
+
+  const { theme, setTheme, colorTheme } = useContext(ThemeContext);
+
+ const link = [
     {
       title: "Profile",
       to: "profile",
@@ -20,11 +29,8 @@ const Header = () => {
       to: "contact",
     },
   ];
-  const { theme, setTheme, colorTheme } = useContext(ThemeContext);
-  console.log(theme);
-
   return (
-    <header className="fixed right-0 left-0 top-0 flex h-[80px] w-full select-none items-center gap-x-5 bg-white px-5 dark:bg-primary md:px-20">
+    <header className="fixed right-0 left-0 top-0 z-50 flex h-[80px] w-full select-none items-center gap-x-5 bg-white px-5 dark:bg-primary md:px-20">
       {/* Left div LOGO && Links */}
       <div className="flex items-center gap-x-5">
         <span className="smooth--hover cursor-pointer text-2xl font-bold tracking-widest text-brand hover:text-white">
@@ -83,7 +89,10 @@ const Header = () => {
         </svg>
       )}
       {/* Menu toggle && icons */}
-      <div className="center--content smooth--hover absolute right-4  h-10 w-10 cursor-pointer rounded-full hover:bg-brand/30 dark:text-white md:hidden">
+      <div
+        className="center--content smooth--hover absolute right-4  h-10 w-10 cursor-pointer rounded-full hover:bg-brand/30 dark:text-white md:hidden"
+        onClick={toggleMenu}
+      >
         <svg
           className="h-6 w-6 "
           fill="none"
@@ -99,6 +108,8 @@ const Header = () => {
           />
         </svg>
       </div>
+      {/* side Header */}
+      <SideHeader show={show} onClose={toggleMenu} />
     </header>
   );
 };

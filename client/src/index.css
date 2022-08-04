@@ -20,4 +20,14 @@
   .active {
     @apply underline decoration-brand underline-offset-2;
   }
+  /* *Form styles */
+  .form--input {
+    @apply rounded-sm border-none bg-[#e6e6e6] px-5 py-2 text-primary outline-none focus:outline-brand dark:bg-secondary dark:text-white;
+  }
+  .form--textarea {
+    @apply resize-none rounded-sm bg-[#e6e6e6] p-5 text-primary outline-none focus:outline-brand dark:bg-secondary dark:text-white;
+  }
+  .form--btn {
+    @apply w-28 rounded-sm border border-brand bg-brand py-2 text-sm uppercase text-white enabled:hover:opacity-50;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebookF } from "react-icons/fa";
 
+
 const Footer = () => {
   const socialLink = [
     {
@@ -21,7 +22,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="center--content flex-col gap-y-5 border-t-2 border-secondary py-10">
+    <footer className="center--content flex-col gap-y-5 border-t-[1px] border-secondary/20 py-10">
       <h2 className="text-primary dark:text-white">
         &copy; All rights reserved. Dev Pat - 2022
       </h2>
