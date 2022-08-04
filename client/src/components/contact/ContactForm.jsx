@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 
 const ContactForm = () => {
-  // const [error, setError] = useState(null);
-  // const [sucess, setSuccess] = useState(null);
-
   const validation = Yup.object().shape({
     name: Yup.string().min(3, "name is too short").required(),
     subject: Yup.string().min(3, "subject is too short").required(),
@@ -62,7 +59,6 @@ const ContactForm = () => {
       {errors.name && touched.name && (
         <p className="text-[0.8rem] text-red-500">{errors.name}</p>
       )}
-
       {/* sucject */}
       <div className="flex flex-col">
         <label

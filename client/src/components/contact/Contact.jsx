@@ -20,7 +20,7 @@ const Contact = () => {
         <span className="text-brand">//</span> Contact
       </h1>
       <div className="md:px20 container mt-20 md:mx-auto">
-        <h1 className="my-2 text-4xl font-bold capitalize text-primary dark:text-white">
+        <h1 className="my-2 text-2xl font-bold capitalize text-primary dark:text-white">
           Let's<span className="text-brand"> work together</span> ?
         </h1>
 

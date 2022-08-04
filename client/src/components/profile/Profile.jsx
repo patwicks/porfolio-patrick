@@ -12,11 +12,14 @@ const Profile = () => {
       <div className="container flex flex-col justify-between gap-x-5 md:flex-row">
         <div className="w-full md:w-1/2">
           <h1 className="text-5xl text-primary dark:text-white">
-            Hi, I'm <span className="font-bold text-brand">Patrick</span>
+            Hi, I'm <span className="font-bold text-brand">Dev Pat</span>
           </h1>
-          <h2 className="my-1 text-3xl font-medium leading-loose text-primary dark:text-white">
+          <h2 className="my-1 text-2xl font-medium leading-loose text-primary dark:text-white">
             Web Developer
           </h2>
+          <p className="my-2 text-primary dark:text-white">
+            <span className="text-brand">#</span> Patrick John Santillan
+          </p>
           <p className="font-extralight text-primary dark:text-white">
             I love automating manual processes through my web development
             skills. I am a full-stack web developer based in Pampanga,
