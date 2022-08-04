@@ -23,14 +23,14 @@ const Contact = () => {
         <h1 className="my-2 text-4xl font-bold capitalize text-primary dark:text-white">
           Let's<span className="text-brand"> work together</span> ?
         </h1>
-      
+
         <div className="flex flex-col-reverse gap-20 md:flex-row">
           {/* form */}
           <div className="w-full md:w-1/2">
             <ContactForm />
           </div>
 
-          <div className="flex w-full mt-10 flex-col gap-y-5 md:w-1/2">
+          <div className="mt-10 flex w-full flex-col gap-y-5 md:w-1/2 p-5">
             <div className="flex items-center gap-x-3">
               <span className="text-xl text-primary dark:text-brand">
                 <AiOutlineMail />

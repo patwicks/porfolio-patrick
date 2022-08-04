@@ -13,7 +13,7 @@ export const serviceList = [
   {
     title: "Maintainability",
     description:
-      "Creating code that is as short and tidy as possible and creating reusable components for excellent maintainability.",
+      "Writing code that is as short and tidy as possible and creating reusable components for excellent maintainability.",
     icon: MAINTAIN,
   },
   {

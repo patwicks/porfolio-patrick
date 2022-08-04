@@ -20,7 +20,7 @@ const HomePage = () => {
       <Profile />
       <Services />
       <Projects />
-      <div className="smooth--hover mx-5 flex items-center justify-start gap-x-2 text-primary hover:text-brand dark:text-brand dark:hover:text-white md:mx-20">
+      {/* <div className="smooth--hover mx-5 flex items-center justify-start gap-x-2 text-primary hover:text-brand dark:text-brand dark:hover:text-white md:mx-20">
         <a
           className="decoration underline "
           href="https://github.com/patwicks"
@@ -30,7 +30,7 @@ const HomePage = () => {
           Discover more repository{" "}
         </a>
         <FiExternalLink />
-      </div>
+      </div> */}
       <Contact />
       <Footer />
     </div>
