@@ -5,6 +5,7 @@ const Services = () => {
     <div
       className="h-full min-h-screen w-full px-5 py-10 md:px-20"
       id="services"
+      data-aos="fade-up"
     >
       <h1 className="my-5 text-2xl font-semibold uppercase text-primary dark:text-white">
         <span className="text-brand">//</span> Services

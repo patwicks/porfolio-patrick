@@ -6,6 +6,7 @@ const Projects = () => {
     <section
       className="h-full min-h-screen w-full  px-5  py-10 md:px-20 md:py-0"
       id="projects"
+      data-aos="fade-up"
     >
       <h1 className="text-2xl font-semibold uppercase text-primary dark:text-white">
         <span className="text-brand">//</span> Projects

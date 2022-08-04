@@ -11,7 +11,7 @@ const Header = () => {
 
   const { theme, setTheme, colorTheme } = useContext(ThemeContext);
 
- const link = [
+  const link = [
     {
       title: "Profile",
       to: "profile",
@@ -45,7 +45,7 @@ const Header = () => {
                 to={data.to}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-150}
                 duration={300}
               >
                 {data.title}

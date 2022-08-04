@@ -2,7 +2,10 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form className="mt-5 flex flex-col gap-y-5">
+    <form className="flex flex-col gap-y-5">
+      <p className="font-thin text-primary dark:text-white">
+        You can directly email me here.
+      </p>
       <div className="flex flex-col">
         <label
           className="pb-1 text-sm text-primary dark:text-white"

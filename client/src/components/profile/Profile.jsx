@@ -46,8 +46,12 @@ const Profile = () => {
               </a>
             </button>
             <button className="center--content smooth--hover flex w-28 rounded-sm border border-brand py-1 text-sm text-primary hover:bg-brand dark:text-white">
-              Resume
-              <span>
+              <a
+                className="flex items-center"
+                href="RESUME_PatrickJohnGSantillan.pdf"
+                download="RESUME_PatrickJohnGSantillan.pdf"
+              >
+                Resume
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
@@ -60,7 +64,7 @@ const Profile = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </span>
+              </a>
             </button>
           </div>
         </div>

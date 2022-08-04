@@ -14,6 +14,7 @@ const Contact = () => {
     <div
       className="mb-32 h-full min-h-screen w-full flex-col px-5 pt-10 md:px-20"
       id="contact"
+      data-aos="fade-up"
     >
       <h1 className="text-2xl font-semibold text-primary dark:text-white">
         <span className="text-brand">//</span> Contact
@@ -22,16 +23,14 @@ const Contact = () => {
         <h1 className="my-2 text-4xl font-bold capitalize text-primary dark:text-white">
           Let's<span className="text-brand"> work together</span> ?
         </h1>
-        <p className="py-2 text-sm font-thin text-primary dark:text-white">
-          You can directly email me here.
-        </p>
-        <div className="flex flex-col gap-20 md:flex-row">
+      
+        <div className="flex flex-col-reverse gap-20 md:flex-row">
           {/* form */}
           <div className="w-full md:w-1/2">
             <ContactForm />
           </div>
 
-          <div className="flex w-full flex-col gap-y-5 md:w-1/2">
+          <div className="flex w-full mt-10 flex-col gap-y-5 md:w-1/2">
             <div className="flex items-center gap-x-3">
               <span className="text-xl text-primary dark:text-brand">
                 <AiOutlineMail />
