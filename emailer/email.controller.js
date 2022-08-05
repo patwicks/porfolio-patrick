@@ -33,3 +33,7 @@ exports.SEND_MAIL = (req, res) => {
       .json({ errorMsg: "We can't reach ypur email, try again!" });
   }
 };
+
+exports.HELLO = (req, res) => {
+  res.send("Hello Everyone, I'm Dev Pat!");
+};

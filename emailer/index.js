@@ -11,7 +11,7 @@ app.use(cors());
 //{ origin: "https://dev-pat.netlify.app/"}
 
 //app routes middlewares
-app.use("/v1/ap1/send", emailRoute);
+app.use("/v1/api/send", emailRoute);
 
 let port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`App is listeing to port ${port} ...`));
