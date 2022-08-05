@@ -16,13 +16,12 @@ const ContactForm = () => {
   const onSubmit = async (values, actions) => {
     try {
       const res = await API.post("/email", values);
-     if(res.data) {
-      console.log(res.data);
-      actions.setSubmitting(false);
-      setSuccessMsg(res.data.successMsg)
-     }
+      if (res.data) {
+        actions.setSubmitting(false);
+        actions.resetForm();
+        setSuccessMsg(res.data.success);
+      }
     } catch (error) {
-      // console.log(error.response.data.errorMsg)
       setErrorMsg(error.response.data.errorMsg);
       actions.setSubmitting(false);
     }
@@ -47,6 +46,20 @@ const ContactForm = () => {
       <p className="font-thin text-primary dark:text-white">
         You can directly email me here.
       </p>
+      {/* Error Message from server  */}
+      {errorMsg !== null ? (
+        <p className="bg-red-100 py-2 text-center text-sm text-red-500">
+          {errorMsg}
+        </p>
+      ) : null}
+      {/* Success message from server */}
+
+      {successMsg !== null ? (
+        <p className="bg-green-100 py-2 text-center text-sm text-green-500">
+          {successMsg}
+        </p>
+      ) : null}
+
       <div className="flex flex-col">
         <label
           className="pb-1 text-sm text-primary dark:text-white"

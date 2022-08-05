@@ -4,7 +4,7 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   //* Get the current theme in Local Storage
-  const storedTheme = window.localStorage.theme;
+  const storedTheme = localStorage.theme;
   //* Set the Initial theme
   const initialTheme = storedTheme === "undefined" ? "dark" : storedTheme;
   //* Current theme on state

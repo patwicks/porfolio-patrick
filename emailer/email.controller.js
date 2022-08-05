@@ -27,7 +27,6 @@ exports.SEND_MAIL = (req, res) => {
       }
     });
   } catch (error) {
-    console.log(error.message);
     return res
       .status(500)
       .json({ errorMsg: "We can't reach ypur email, try again!" });

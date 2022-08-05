@@ -3,7 +3,6 @@ import ContactForm from "./ContactForm";
 import { MdOutlineLocationOn, MdPhoneInTalk } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 
-
 const Contact = () => {
   const contact = {
     email: "it.patrickjohngsantillan@gmail.com",

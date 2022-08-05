@@ -7,8 +7,8 @@ const app = express();
 // middlewares
 dotenv.config();
 app.use(express.json());
-app.use(cors({ origin: "https://dev-pat.netlify.app/" }));
-//{ origin: "https://dev-pat.netlify.app/"}
+app.use(cors({ origin: "https://dev-pat.netlify.app" }));
+// app.use(cors({ origin: "http://127.0.0.1:5173" })); //local testing
 
 //app routes middlewares
 app.use("/v1/api/send", emailRoute);
