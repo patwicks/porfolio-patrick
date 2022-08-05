@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import API from "../../api/Api";
 
 const ContactForm = () => {
+  const [errorMsg, setErrorMsg] = useState(null);
+  const [successMsg, setSuccessMsg] = useState(null);
   const validation = Yup.object().shape({
     name: Yup.string().min(3, "name is too short").required(),
     subject: Yup.string().min(3, "subject is too short").required(),
@@ -10,12 +13,19 @@ const ContactForm = () => {
     message: Yup.string().min(10, "message is too short").required(),
   });
 
-  const onSubmit = (values, actions) => {
-    console.log(values);
-    setTimeout(() => {
+  const onSubmit = async (values, actions) => {
+    try {
+      const res = await API.post("/email", values);
+     if(res.data) {
+      console.log(res.data);
       actions.setSubmitting(false);
-      actions.resetForm();
-    }, 5000);
+      setSuccessMsg(res.data.successMsg)
+     }
+    } catch (error) {
+      // console.log(error.response.data.errorMsg)
+      setErrorMsg(error.response.data.errorMsg);
+      actions.setSubmitting(false);
+    }
   };
 
   const {

@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 import { MdOutlineLocationOn, MdPhoneInTalk } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 
+
 const Contact = () => {
   const contact = {
     email: "it.patrickjohngsantillan@gmail.com",
@@ -30,7 +31,7 @@ const Contact = () => {
             <ContactForm />
           </div>
 
-          <div className="mt-10 flex w-full flex-col gap-y-5 md:w-1/2 p-5">
+          <div className="mt-10 flex w-full flex-col gap-y-5 p-5 md:w-1/2">
             <div className="flex items-center gap-x-3">
               <span className="text-xl text-primary dark:text-brand">
                 <AiOutlineMail />
