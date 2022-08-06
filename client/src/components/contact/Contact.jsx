@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <section
-      className="mb-32 h-full min-h-screen w-full flex-col px-5 pt-10 md:px-20 lg:container lg:mx-auto"
+      className="mb-32 h-full min-h-screen w-full flex-col px-5 pt-10 md:px-20 "
       id="contact"
       data-aos="fade-up"
     >

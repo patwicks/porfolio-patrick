@@ -4,7 +4,7 @@ import { projectList } from "./projectList";
 const Projects = () => {
   return (
     <section
-      className="h-full min-h-[80vh] w-full  px-5  py-10 md:px-20 md:py-0 lg:container lg:mx-auto"
+      className="h-full min-h-[80vh] w-full  px-5  py-10 md:px-20 md:py-0 "
       id="projects"
       data-aos="fade-up"
     >
@@ -65,7 +65,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="smooth--hover flex mt-5 items-center justify-center gap-x-2 text-primary hover:text-brand dark:text-brand dark:hover:text-white md:mx-20">
+      <div className="smooth--hover mt-5 flex items-center justify-center gap-x-2 text-primary hover:text-brand dark:text-brand dark:hover:text-white md:mx-20">
         <a
           className="decoration underline "
           href="https://github.com/patwicks"
