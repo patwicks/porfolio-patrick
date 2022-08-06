@@ -31,10 +31,10 @@ const Header = () => {
     },
   ];
   return (
-    <header className="fixed right-0 left-0 top-0 z-50 flex h-[80px] w-full select-none items-center gap-x-5 bg-white px-5 dark:bg-primary md:px-20">
+    <header className="fixed right-0  min-w-[280px] left-0 top-0 z-50 flex h-[80px] w-full select-none items-center gap-x-5 bg-white px-5 dark:bg-primary md:px-20">
       {/* Left div LOGO && Links */}
       <div className="flex items-center gap-x-10">
-        <div className="h-8 w-8">
+        <div className="h-[1.8rem] w-[1.8rem]">
           <img
             className="h-full w-full object-contain object-center"
             src={LOGO}
@@ -50,7 +50,7 @@ const Header = () => {
                 to={data.to}
                 spy={true}
                 smooth={true}
-                offset={-150}
+                offset={-200}
                 duration={300}
               >
                 {data.title}

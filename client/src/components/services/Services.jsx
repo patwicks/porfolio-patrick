@@ -3,7 +3,7 @@ import { serviceList } from "./serviceList";
 const Services = () => {
   return (
     <div
-      className="h-full min-h-screen w-full px-5 py-10 md:px-20"
+      className="h-full min-h-[80vh] w-full px-5 py-10 md:px-20 lg:container lg:mx-auto"
       id="services"
       data-aos="fade-up"
     >
@@ -23,7 +23,7 @@ const Services = () => {
                 alt={data.title}
               />
             </div>
-            <h1 className="my-2 text-xl font-semibold text-primary dark:text-white">
+            <h1 className="my-4 text-xl font-semibold text-primary dark:text-white">
               {data?.title}
             </h1>
             <p className="font-thin leading-relaxed text-primary dark:text-white">

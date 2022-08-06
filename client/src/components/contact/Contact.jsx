@@ -11,8 +11,8 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="mb-32 h-full min-h-screen w-full flex-col px-5 pt-10 md:px-20"
+    <section
+      className="mb-32 h-full min-h-screen w-full flex-col px-5 pt-10 md:px-20 lg:container lg:mx-auto"
       id="contact"
       data-aos="fade-up"
     >
@@ -53,7 +53,7 @@ const Contact = () => {
           {/* details */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

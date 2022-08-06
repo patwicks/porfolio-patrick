@@ -5,7 +5,7 @@ import MAINTAIN from "./assets/maintainable.png";
 
 export const serviceList = [
   {
-    title: "User Friendly",
+    title: "User-friendly Design",
     description:
       "Developing websites with a focus on user usability , well-formatted content, compatibility, and responsiveness.",
     icon: USERF,

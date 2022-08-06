@@ -44,7 +44,7 @@ const ContactForm = () => {
   return (
     <form className="flex flex-col gap-y-5" onSubmit={handleSubmit}>
       <p className="font-thin text-primary dark:text-white">
-        You can directly email me here.
+        Send me an email.
       </p>
       {/* Error Message from server  */}
       {errorMsg !== null ? (
