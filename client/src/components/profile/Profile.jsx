@@ -51,8 +51,8 @@ const Profile = () => {
             <button className="center--content smooth--hover flex w-28 rounded-sm border border-brand py-1 text-sm text-primary hover:bg-brand dark:text-white">
               <a
                 className="flex items-center"
-                href="RESUME_PatrickJohnGSantillan.pdf"
-                download="RESUME_PatrickJohnGSantillan.pdf"
+                href="NotAvailable.pdf"
+                download="NotAvailable.pdf"
               >
                 Resume
                 <svg

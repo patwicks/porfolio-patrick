@@ -5,9 +5,9 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
   const contact = {
-    email: "it.patrickjohngsantillan@gmail.com",
+    email: "it************@gmail.com",
     address: "Apalit Pampanga Philippines",
-    contact: "+6392023711",
+    contact: "+6392***711",
   };
 
   return (
